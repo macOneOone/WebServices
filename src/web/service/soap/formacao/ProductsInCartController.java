@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ProductsInCartController {
 
     private static ArrayList<ProductsInCart> productsInCarts = new ArrayList<ProductsInCart>();
+    // this is a bad idea, so I will fix it soon :)
     private static int lastIndex;
     public static void addProductsInCart (ProductsInCart item){
         Product product = findProductInCart(item.getProduct().getCodProduct().toString());

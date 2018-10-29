@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41f49edf-cdfa-404d-aab7-60239dd39d82" name="Default Changelist" comment="" />
+    <list default="true" id="41f49edf-cdfa-404d-aab7-60239dd39d82" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,12 +65,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="8683" />
+          <entry key="java" value="8800" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8683" />
+          <entry key="JAVA" value="8800" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -83,7 +85,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/web/service/soap/formacao/WebService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -102,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="105">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding>
                 <element signature="e#182#198#0" expanded="true" />
                 <element signature="e#847#848#0" expanded="true" />
@@ -197,10 +199,10 @@
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCart.java" />
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/Stock.java" />
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/Product.java" />
-        <option value="$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java" />
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/StartEngine.java" />
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/StockController.java" />
         <option value="$PROJECT_DIR$/src/web/service/soap/formacao/WebService.java" />
+        <option value="$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java" />
       </list>
     </option>
   </component>
@@ -274,7 +276,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540824921111" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540826054027" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -404,12 +406,12 @@
       <workItem from="1538998696049" duration="534000" />
       <workItem from="1539003637168" duration="5248000" />
       <workItem from="1540220784619" duration="13870000" />
-      <workItem from="1540457549930" duration="25116000" />
+      <workItem from="1540457549930" duration="25873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44768000" />
+    <option name="totallyTimeSpent" value="45525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,6 +424,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4847397" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" sideWeight="0.51526034" side_tool="true" visible="true" weight="0.26037195" />
@@ -591,18 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#182#198#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -656,6 +647,18 @@
             <element signature="e#1774#1775#0" expanded="true" />
             <element signature="e#1862#1863#0" expanded="true" />
             <element signature="e#1908#1909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/service/soap/formacao/ProductsInCartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="e#182#198#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
