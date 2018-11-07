@@ -1,15 +1,15 @@
 package web.service.soap.formacao;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.xml.ws.Endpoint;
-
 import java.util.ArrayList;
 
 @javax.jws.WebService()
 
 public class WebService{
 
-    public static Stock stock;
+    private static Stock stock;
 
     @WebMethod
     public String addProductInStock (@WebParam(name = "nome") String name,@WebParam(name = "price") float price, @WebParam(name = "Qtd")int qtd){
@@ -33,25 +33,25 @@ public class WebService{
 
     @WebMethod
     public String getProductNamebByCod(@WebParam(name = "CodProducts")String cod){
-        Product product = this.QueryStock(cod);
+        Product product = QueryStock(cod);
         return product.getNome();
     }
 
     @WebMethod
     public float getProductPriceByCod (@WebParam(name = "CodProducts")String cod) {
-        Product product = this.QueryStock(cod);
+        Product product = QueryStock(cod);
         return product.getValuePrice();
     }
 
     @WebMethod
     public boolean addProductInCart (@WebParam(name = "CodProducts") String cod,@WebParam(name = "Qtd" )int qtd){
-        Product product = this.QueryStock(cod);
-        int calculation = 0;
+        Product product = QueryStock(cod);
+        int QtdSpared;
         if(product != null && qtd <= product.getQtd()){
-            ProductsInCart addInCartAction = new ProductsInCart(product,qtd);
-            ProductsInCartController.addProductsInCart(addInCartAction);
-            calculation = product.getQtd() - qtd;
-            product.setQtd(calculation);
+            ProductsInCart newRequest = new ProductsInCart(product, qtd);
+            ProductsInCartController.addProductsInCart(newRequest);
+            QtdSpared = product.getQtd() - qtd;
+            product.setQtd(QtdSpared);
             return true;
         }
         return false;
@@ -59,11 +59,8 @@ public class WebService{
 
     @WebMethod
     public boolean CheckWeatherAProductExistsInCart(@WebParam(name = "CodProducts") String cod){
-        Product product = this.QueryCart(cod);
-        if(product!=null){
-            return true;
-        }
-        return false;
+        Product product = QueryCart(cod);
+        return product != null;
     }
 
     private static Product QueryStock(String cod) {
